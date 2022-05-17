@@ -1,0 +1,251 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Copyright (C) 2022, Chenjie Gan. 干晨劼
+%% Department of Engineering Mechanics, School of Aerospace.
+%% Email: ganchenjie@stu.xjtu.edu.cn / chenjie_gan@brown.edu
+%% based on XJTU-BSThesis_latex_2016: Version 1.1 by Lingxiao Zhao
+%%
+%% READ ME!!!
+%% This .cls file provide a template to use latex for the paper of bachelor degree in 2022.
+%% This latex template is based on word template: 2022届毕业设计（论文）模版, which is provided by XJTU.
+%% This document is for reference only. The author is not responsible for any errors in formatting that may arise from the use of this document. Before using this document, please be sure to check your requirment.
+%%
+%% Basic Information
+%% 0. This work is based on XJTU-BSThesis_latex_2016: Version 1.1 by Lingxiao Zhao, and there are only a few changes in this version. These changes are listed below.
+%% 1. Revised the format of the Chinese and English abstract sections.
+%% 2. Revised the format of equation in whole paper. Now, when using command \begin{equation} \begin{align} \begin{gather}, equations will be centering.
+%% 3. Revised the format of the table.
+%%
+%% To be improved
+%% 1. denotation part is unusable for unknow reason
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reference: 
+% 1.  NJU Latex Model from Chuheng Zhang
+% 作者：张楚珩，zhangchuheng123 (at) live (dot) com
+% 个人主页: http://sealzhang.tk
+% 感谢Hu Haixing提供的南京大学硕博学位论文模板
+% 项目主页：http://haixing-hu.github.io/nju-thesis/
+%
+% 2. XJTU CTex Model from 
+%  MCMTHESIS.cls  CopyLeft 2011/8/24 by
+%  wanghongxin <hongxin_w@163.com>
+%  hugo <>
+%  hy_haoyun <haoyun_tex@163.com>
+%
+% 3. XJTU-BSThesis_latex_2016/
+%  https://github.com/LingxiaoShawn/XJTU_LaTeX
+%  Lingxiao Zhao. 赵令霄
+%  Department of Electrical Engineering, Xi'an Jiaotong University.
+%  Email: lingxia1@andrew.cmu.edu
+%  Made a huge improvement accoding to the word template provided by XJTU!!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 使用说明：
+% 1.首先在下面［Mac］处自行改系统
+% 2.第二个section给出了常用功能用法示范
+%====================================%
+% 3.中文文献在生成Bibtex的时候加入：language ={zh}，如：
+% @article{陈润泽2014含储热光热电站的电网调度模型与并网效益分析,
+%   title={含储热光热电站的电网调度模型与并网效益分析},
+%   author={陈润泽 and 孙宏斌 and 李正烁 and 刘一兵},
+%   journal={电力系统自动化},
+%   volume={19},
+%   pages={001},
+%   year={2014},
+%   language ={zh}    % 加入这一行
+% }
+%====================================%
+% 4.当很多公式连续在一起时，采用\begin{gather}或\begin{align}环境替换\begin{equation}，具体用法google
+%                        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[Mac]{xjtuBSThesis}  % 输入Mac or Linux or Win 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%用户使用处%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 以下三项是必须的。
+\author{}{} % 作者{中文}{英文}
+\title{}{}  % 题目{中文}{英文}
+\advisor{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}  % 导师{中文}{英文}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+%\includepdf[pages={页码，不同页码逗号隔开}]{pdf文件名}  % 用于导入前几页任务书和评审表。
+
+\frontmatter
+
+\begin{abstractcn} % 中文摘要
+
+摘要是论文的高度概括，是全文的缩影，是长篇论文不可缺少的组成部分。要求用中、英文分别书写，一篇摘要不少于400字。
+居中编排“摘要”二字（三号宋体），二字间距为两个字符。“摘要”二字下为摘要正文，每段开头空两字符，小四号。
+
+……
+
+
+\end{abstractcn}
+
+\keywordscn{} % 中文关键词
+
+\begin{abstracten} % 英文摘要
+
+英文摘要的内容、格式和字号必须与中文摘要的一致。
+居中编排“ABSTRACT”（三号Times New Roman），英文摘要内容用小四号Times New Roman。
+摘要正文每段开头不空格，每段之间空一行。
+
+The key parts in drip irrigation facilities are emitters. The structural design parameters of emitters can directly affect its performance and the function of the whole drip irrigation system ……
+
+1. Because……
+
+2. Only ……
+
+3. To support ……
+
+
+\end{abstracten}
+
+\keywordsen{} % 英文关键词
+\tableofcontents % 生成目录
+
+%================================================
+%	正文
+%================================================
+\mainmatter
+
+\section{绪论}
+一级标题：另起一页，居中，三号，单倍行距，段前空三行，段后空两行. 
+
+二级标题：左对齐顶格，小三号，单倍行距，段前空一行，段后空0.5行。
+
+三级标题：左起空两字符，四号，单倍行距，段前空0.5行，段后空0行。
+
+正文：除3级标题、图题、表题之外，均采用小四号。
+
+图题和表题：采用中文，居中，五号。
+\subsection{页面及页眉页脚}
+纸张：纸型为A4（21.0 cm×29.7cm）标准，双面打印。
+
+页边距：上、下、左、右、装订线的页边距分别为：3.0cm, 2.5cm, 2.6cm, 2.6cm, 0cm，装订线位置：左。左右对称页边距。
+
+页眉和页脚：页眉距边界2.0cm，页脚距边界1.75cm。脚注：全文的脚注一律采用五号。页眉内容：从摘要到最后，每一页均须有页眉。页眉用五号宋体，居中排列。奇偶页不同。奇数页页眉为相应内容的名称、正文中相应各章的名称，偶数页页眉为“西安交通大学本科毕业设计(论文)”。格式为页眉的文字内容之下划两条横线，线粗1/2磅，线长与页面齐宽。
+\subsubsection{字距、行距、页码}
+字距和行距：如无特殊说明，全文一律采用无网格、1.5倍或1.2倍行距，段前段后不空行。
+页码：论文页码的第一页从正文开始用阿拉伯数字标注，直至全文结束。正文前的内容（除封面）用罗马数字单独标注页码。页码位于页面底端，对齐方式为 “外侧”，页码格式为最简单的数字，不带任何其它的符号或信息。页码不能出现缺页和重复页。附录（含外文复印件及外文译文、有关图纸、计算机源程序等）必须与正文装订在一起，页码要接着正文的页码连续编写。
+
+
+\section{示例}
+表格的示例。
+
+\begin{table}[htbp]\small
+  \centering
+  \topcaption{测试表格}
+  \begin{tabular}{cccc}
+    \toprule[1.5pt]
+    \textbf{文档域类型} & \textbf{Java类型} & \textbf{宽度(字节)} & \textbf{说明} \\
+    \midrule[1pt]
+    $BIG\_INTEGER$& java.math.BigInteger & 和具体值有关 & 任意精度的长整数 \\
+    $BIG\_DECIMAL$ & java.math.BigDecimal & 和具体值有关 & 任意精度的十进制实数 \\
+    \bottomrule[1.5pt]
+  \end{tabular}
+  
+\end{table}
+
+插入图片的示例。
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=0.5\textwidth]{xjtu2.PNG} % requires the graphicx package
+   \downcaption{测试图片}
+   \label{fig:example}
+\end{figure}
+
+子图例子
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.3\textwidth]{xjtu1.PNG}
+        \caption{A}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.3\textwidth]{xjtu1.PNG}
+        \caption{B}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.3\textwidth]{xjtu1.PNG}
+        \caption{C}
+    \end{subfigure}
+    \caption{测试子图}
+\end{figure}
+
+
+公式的示例。
+
+\begin{equation}
+\rho = \sum_i p_i  |\psi_i \rangle \langle \psi_i |
+\end{equation}
+\begin{gather}
+q^1_{i,t}\le MZ^{1}_{i,t}\ , \quad q^{TH}_{i,t}-q^{2}_{i,t}\le M(1-Z^1_{i,t})\allowdisplaybreaks[2]\\
+q^4_{i,t} \le MZ^2_{i,t}\ ,\quad q^{HT}-q^3_{i,t} \le M(1-Z^2_{i,t})\allowdisplaybreaks[2]\\
+q^{CSP,Rup2}_{i,t}+q^{CSP,A+2}_{i,t} \le MZ^3_{i,t}\ ,\quad q^{TESc}_{i,t}-q^{CSP,Rup1}_{i,t}-q^{CSP,A+1}_{i,t} \le M(1-Z^3_{i,t})\allowdisplaybreaks[2]\\
+q^{CSP,A-2}_{i,t}\le M^4_{i,t}\ ,\quad q^{TESd}_{i,t}-q^{CSP,A-1}_{i,t}\le M(1-Z^4_{i,t})
+\end{gather}
+式中：
+\begin{align*}
+\begin{alignedat}{3}
+&  &\text{---\hspace*{-1mm}---}& \text{}\allowdisplaybreaks[2]\\
+&  &\text{---\hspace*{-1mm}---}& \text{}\allowdisplaybreaks[2]\\
+&  &\text{---\hspace*{-1mm}---}& \text{}\allowdisplaybreaks[2]\\
+\end{alignedat}
+\end{align*}
+%\allowdisplaybreaks[2]的作用是允许此处分页，中间的数字越大表示允许度越强，最高数字为4，另外该方法对alignedat、aligned环境无用。如果实在想分页，请采用本办法手动分页，即原本用一个alignedat环境圈起来的公式采用两个alignedat环境来写。
+
+引用的示例。
+
+测试一下上标引用\upcite{newman2006structure}，连续引用
+\cite{newman2001random,aiello2000random,bollobas2001random}，另一个连续引用
+\cite{newman2001random,bollobas2001random,barabasi1999emergence}。测试一下带页码
+的引用\cite[124--128]{erdHos1961strength}。
+
+算法的示例
+
+\begin{algorithm}
+    \caption{Euclid’s algorithm}
+    \label{alg:euclid}
+    \begin{algorithmic}[1]
+        \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+        \State $r\gets a\bmod b$
+        \While{$r\not=0$}\Comment{We have the answer if r is 0}
+        \State $a\gets b$
+        \State $b\gets r$
+        \State $r\gets a\bmod b$
+        \EndWhile\label{euclidendwhile}
+       \State \textbf{return} $b$\Comment{The gcd is b}
+       \EndProcedure
+   \end{algorithmic}
+\end{algorithm}
+
+
+\begin{definition}
+定义：EPR和Bell不等式。与此类似的还有notation、theorem、lemma、corollary、proposition、fact、assumption、conjecture、hypothesis、axiom、postulate、principle、problem、exercise、example、remark等。
+\end{definition}
+\begin{theorem}
+定义：EPR和Bell不等式。与此类似的还有notation、theorem、lemma、corollary、proposition、fact、assumption、conjecture、hypothesis、axiom、postulate、principle、problem、exercise、example、remark等。
+\end{theorem}
+
+\section{结论与展望}
+
+\backmatter 
+
+\begin{acknowledgment}%致谢
+
+\end{acknowledgment}
+
+\bibliography{sample}
+
+\appendixs{}%附录，直接在后面加内容
+
+
+\end{document}  
