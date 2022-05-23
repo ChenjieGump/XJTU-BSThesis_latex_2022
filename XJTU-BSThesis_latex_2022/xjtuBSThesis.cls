@@ -16,6 +16,7 @@
 %% 1. Revised the format of the Chinese and English abstract sections.
 %% 2. Revised the format of equation in whole paper. Now, when using command \begin{equation} \begin{align} \begin{gather}, equations will be centering.
 %% 3. Revised the format of the table.
+%% 4. Changed the fontsize of keyword
 %%
 %% To be improved
 %% 1. denotation part is unusable for unknow reason
@@ -419,7 +420,7 @@
 \end{center}
 }{\par}
 
-\newcommand{\keywordscn}[1]{\vspace{\baselineskip}\par\noindent {\five {\bfseries 关键词：}#1}}
+\newcommand{\keywordscn}[1]{\vspace{\baselineskip}\par\noindent {\sfour {\bfseries 关键词：}#1}}
 
 %=== English ===%
 \newcommand{\XJTU@abstract@en}{\three ABSTRACT}
@@ -436,7 +437,7 @@
 \setlength\parindent{2ex} % 恢复段首缩进
 \par}
 
-\newcommand{\keywordsen}[1]{\vspace{\baselineskip}\par\noindent {\five {\bfseries KEY WORDS ：}#1}}
+\newcommand{\keywordsen}[1]{\vspace{\baselineskip}\par\noindent {\sfour {\bfseries KEY WORDS ：}#1}}
 
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
