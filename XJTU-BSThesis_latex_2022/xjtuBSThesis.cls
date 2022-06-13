@@ -490,9 +490,9 @@
 {\cleardoublepage
 \refstepcounter{appends}
 \stepcounter{section}
-\sectionmark{ 附录\arabic{appends}  \hspace{0.15cm}#1}
-\section*{附录\arabic{appends}  \hspace{0.15cm}#1}
-\addcontentsline{toc}{section}{附录\arabic{appends} \hspace{0.15cm}#1}
+\sectionmark{ 附录\Alph{appends}  \hspace{0.15cm}#1}
+\section*{附录\Alph{appends}  \hspace{0.15cm}#1}
+\addcontentsline{toc}{section}{附录\Alph{appends} \hspace{0.15cm}#1}
 } 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%引用设置%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %====== Bibliography ======%
