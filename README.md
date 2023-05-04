@@ -47,3 +47,6 @@
  寻遍全网，找到了2016届学长的可用模版。于是根据2022届毕业论文格式要求对这份模版进行修改。
 
  希望能够帮到正在写毕业论文或是将来有需要的同学。
+ 
+ UPDATE May 4, 2023: 提供一份overleaf的xjtu本科thesis template
+ https://www.overleaf.com/latex/templates/xjtu-bachelor-thesis-latex-template/vtrzctjqnpzv
